@@ -1,0 +1,28 @@
+{
+  "name": "ec11-rotary-encoder",
+  "version": "0.0.1",
+  "description": "Use the DF Robot EC11 Rotary Encoder in your NodeJS application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kylir/EC11-rotary-encoder-js.git"
+  },
+  "keywords": [
+    "DF-Robot",
+    "EC11",
+    "rotary",
+    "encoder"
+  ],
+  "author": "Jason Forest",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kylir/EC11-rotary-encoder-js/issues"
+  },
+  "homepage": "https://github.com/Kylir/EC11-rotary-encoder-js#readme",
+  "dependencies": {
+    "onoff": "^3.0.2"
+  }
+}
