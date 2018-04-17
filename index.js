@@ -1,29 +1,29 @@
 const Gpio = require('onoff').Gpio
-const A = new Gpio(13, 'in')
-const B = new Gpio(6, 'in')
-const C = new Gpio(5, 'in')
+
+const A = new Gpio(10, 'in', 'both')
+const B = new Gpio(9, 'in', 'both')
+const C = new Gpio(11, 'in', 'both')
 
 A.watch(function (err, value) {
   if (err) {
     throw err
   }
-  console.log('A triggered')
+  console.log('A triggered: ' + value)
 })
 
 B.watch(function (err, value) {
   if (err) {
     throw err
   }
-  console.log('B triggered')
+  console.log('B triggered: ' + value)
 })
 
 C.watch(function (err, value) {
   if (err) {
     throw err
   }
-  console.log('C triggered')
+  console.log('C triggered: ' + value)
 })
-
 
 process.on('SIGINT', function () {
   A.unexport()
